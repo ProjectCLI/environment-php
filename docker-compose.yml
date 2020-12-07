@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: chriha/php:7.4
+    image: chriha/php:8.0
     volumes:
       - ./src:/var/www
       - ./temp:/temp
@@ -44,7 +44,7 @@ services:
       - default
     command: redis-server
   mailcatcher:
-    image: chriha/mailcatcher:0.7
+    image: chriha/mailcatcher:0.8
     networks:
       - default
     ports:
